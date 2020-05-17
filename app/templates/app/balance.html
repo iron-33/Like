@@ -1,0 +1,30 @@
+{% extends 'app/base2.html' %}
+{% load static %}
+
+{% block content %}
+        <div class="balance-sect">
+            <div class="container">
+                <h1 class="caption2">Пополнение баланса</h1>
+                <form action="">
+                    <div class="input-bl2">
+                        <p class="input-bl2__title">Введите сумму пополнения</p>
+                        <div class="input-bl2__cont">
+                            <div class="input-bl2__inp">
+                                <input type="text">
+                            </div>
+                            <div class="input-bl2__img">
+                                <img src='{% static "img/free-kassa.png" %}' alt="">
+                            </div>
+                        </div>
+                        <button class="balance-replen btn9">
+                            Пополнить
+                        </button>
+                    </div>
+
+                    <p class="balance-info">
+                        При пополнении от <strong>999</strong> рублей вы будите получать бонус плюс <strong>5%</strong> к балансу
+                    </p>
+                </form>
+            </div>
+        </div>
+{% endblock %}

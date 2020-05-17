@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SMM-Group - Пополнение баланса</title>
+    <link rel="stylesheet" href='{% static "css/main.css" %}'>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href='{% static "favicon.ico" type="image/x-icon" %}'>
+</head>
+
+<body>
+
+    <div class="page">
+        <header class="header">
+        </header>
+
+        <div class="header-top2">
+            <div class="container">
+                <a href="/" class="logo"><img src='{% static "img/logo.png" %}' alt=""></a>
+                <nav class="cab-menu2 menu">
+                    <a href="" class="cab-menu2__item cab-menu2__item_active">Новый заказ</a>
+                    <a href="" class="cab-menu2__item">Мои заказы</a>
+                    <a href="" class="cab-menu2__item">Купить оптом</a>
+                     <button type="button" class="menu__close"><img src='{% static "img/close-btn.png" %}' alt=""></button>
+                </nav>
+                <div class="header-top2__btns">
+                    <a class="bnt1">
+                        <img src='{% static "img/user2.png" %}' alt="">
+                        <span>Sorokin88</span>
+                    </a>
+
+                    <div class="info">
+                        <div class="info__icon"><img src='{% static "img/wallet.png" %}' alt=""></div>
+
+                        <span class="info__val">5854.00 руб.</span>
+                    </div>
+                </div>
+
+                <a href="balance" class="btn7 repl-balance">Пополнить баланс</a>
+                <button type="button" class="mob-menu-btn"><img src='{% static "img/burger.png" %}' alt=""></button>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__copy">© 2019-2020 Все права защищены </p>
+
+                <div class="footer__logo"><img src='{% static "img/logo2.png" %}' alt=""></div>
+                <div class="footer__add">Bruce premium office БЦ г. Москва</div>
+            </div>
+        </footer>
+    </div>
+    <script src='{% static "js/jquery-3.4.1.min.js"></script>
+    <script src='{% static "js/main.js" %}' defer></script>
+    <script src='{% static "js/slick.min.js" %}'></script>
+    <script src='{% static "js/home.js" %}'></script>
+    <script src='{% static "js/order.js" %}'></script>
+
+</body>
+
+</html>

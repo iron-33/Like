@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block content %}
+        <div class="registration-body">
+
+            <h2 class="title2">Забыли пароль</h2>
+
+            <div class="forma-wrap">
+
+                <div class="forma" style="margin-top: -15px">
+                    <form action="">
+                        <div class="forma__wrapp">
+                            <div class="input-bl">
+                                <p class="input-bl__title">
+                                    E mail
+                                </p>
+                                <div class="input-bl__field">
+                                    <input type="text">
+                                    <img src='{% static "img/mail.png" %}' alt="">
+                                </div>
+                            </div>
+
+                            <div class="forma__foot">
+                                <button class="btn6 forma__btn">Восстановить пароль</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+{% endblock %}

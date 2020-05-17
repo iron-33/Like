@@ -1,0 +1,57 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{%block content%}
+        <div class="registration-body">
+
+            <h2 class="title2">Вход</h2>
+{% if error %}
+        <div style="color:red;">{{ error }}</div>
+    {% endif %}
+            <div class="forma-wrap">
+
+                <div class="forma" style="margin-top: -15px">
+                    <form action="{% url 'login' %}" method="post">
+                          {% csrf_token %}
+                        <div class="forma__wrapp">
+                            <div class="input-bl">
+                                <p class="input-bl__title">UserName</p>
+                                <div class="input-bl__field">
+                                    <input name="username" type="text">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                            </div>
+
+
+                            <div class="input-bl">
+                                <p class="input-bl__title">Password</p>
+                                <div class="input-bl__field">
+                                    <input name='password' type="password">
+                                    <img src="img/password.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="forma__foot forma__foot_2">
+                            <button class="btn6 forma__btn">Войти в кабинет</button>
+
+                            <a href="forgot-pass.html">Забыли пароль?</a>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="enter">
+                    <p class="enter__title">Войти через</p>
+                    <div class="enter__list">
+                        <a href="" class="enter__item"><img src="img/vk3.png" alt=""></a>
+
+                        <a href="" class="enter__item"><img src="img/facebook2.png" alt=""></a>
+
+                        <a href="" class="enter__item"><img src="img/yandex.png" alt=""></a>
+
+                        <a href="" class="enter__item"><img src="img/google.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

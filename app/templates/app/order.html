@@ -1,0 +1,311 @@
+{% extends 'app/base2.html' %}
+{% load static %}
+
+{% block content %}
+<div class="order-sect">
+            <div class="container">
+                <h1 class="caption2">Создать новый заказ</h1>
+
+                <div class="new-order">
+                    <div class="new-order__col1">
+                        <div class="new-order__block">
+                            <div class="new-order__row">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите социальную сеть</p>
+                                            <p class="bl__val">Vkontakte</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Facebook</div>
+                                            <div class="dropdown__item">Vkontakte</div>
+                                            <div class="dropdown__item">Instagram</div>
+                                            <div class="dropdown__item">Youtube</div>
+                                            <div class="dropdown__item">Twitch</div>
+                                            <div class="dropdown__item">Ok</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new-order__row new-order__row_group">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите накрутку</p>
+                                            <p class="bl__val">Накрутка живых подписчиков</p>
+                                        </div>
+                                        <div class="bl__col2"></div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Накрутка живых подписчиков</div>
+                                            <div class="dropdown__item">Лайки</div>
+                                            <div class="dropdown__item">Просмотры</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bl bl_1">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Количество</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="new-order__row">
+                                <div class="bl bl_2">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon4.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Ссылка на публикацию</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="new-order__block new-order__block_hidden">
+                            <div class="new-order__row">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите социальную сеть</p>
+                                            <p class="bl__val">Vkontakte</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Facebook</div>
+                                            <div class="dropdown__item">Vkontakte</div>
+                                            <div class="dropdown__item">Instagram</div>
+                                            <div class="dropdown__item">Youtube</div>
+                                            <div class="dropdown__item">Twitch</div>
+                                            <div class="dropdown__item">Ok</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new-order__row new-order__row_group">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите накрутку</p>
+                                            <p class="bl__val">Накрутка живых подписчиков</p>
+                                        </div>
+                                        <div class="bl__col2"></div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Накрутка живых подписчиков</div>
+                                            <div class="dropdown__item">Лайки</div>
+                                            <div class="dropdown__item">Просмотры</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bl bl_1">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Количество</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="new-order__row">
+                                <div class="bl bl_2">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon4.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Ссылка на публикацию</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="new-order__block new-order__block_hidden">
+                            <div class="new-order__row">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите социальную сеть</p>
+                                            <p class="bl__val">Vkontakte</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Facebook</div>
+                                            <div class="dropdown__item">Vkontakte</div>
+                                            <div class="dropdown__item">Instagram</div>
+                                            <div class="dropdown__item">Youtube</div>
+                                            <div class="dropdown__item">Twitch</div>
+                                            <div class="dropdown__item">Ok</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new-order__row new-order__row_group">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите накрутку</p>
+                                            <p class="bl__val">Накрутка живых подписчиков</p>
+                                        </div>
+                                        <div class="bl__col2"></div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Накрутка живых подписчиков</div>
+                                            <div class="dropdown__item">Лайки</div>
+                                            <div class="dropdown__item">Просмотры</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bl bl_1">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Количество</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="new-order__row">
+                                <div class="bl bl_2">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon4.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Ссылка на публикацию</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="new-order__block new-order__block_hidden">
+                            <div class="new-order__row">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите социальную сеть</p>
+                                            <p class="bl__val">Vkontakte</p>
+                                        </div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Facebook</div>
+                                            <div class="dropdown__item">Vkontakte</div>
+                                            <div class="dropdown__item">Instagram</div>
+                                            <div class="dropdown__item">Youtube</div>
+                                            <div class="dropdown__item">Twitch</div>
+                                            <div class="dropdown__item">Ok</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new-order__row new-order__row_group">
+                                <div class="bl">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Выберите накрутку</p>
+                                            <p class="bl__val">Накрутка живых подписчиков</p>
+                                        </div>
+                                        <div class="bl__col2"></div>
+                                    </div>
+                                    <div class="bl__drop dropdown">
+                                        <div class="dropdown__list">
+                                            <div class="dropdown__item">Накрутка живых подписчиков</div>
+                                            <div class="dropdown__item">Лайки</div>
+                                            <div class="dropdown__item">Просмотры</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bl bl_1">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon3.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Количество</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="new-order__row">
+                                <div class="bl bl_2">
+                                    <div class="bl__main">
+                                        <div class="bl__icon"><img src='{% static "img/icon4.png" %}' alt=""></div>
+                                        <div class="bl__col">
+                                            <p class="bl__capt">Ссылка на публикацию</p>
+                                            <input type="text" class="bl__val">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-order-wrap1">
+                            <button class="btn10 btn-add-link">
+                                <span>Добавить ссылку</span>
+                                <img src="img/plus.png" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="new-order__col2">
+                        <div class="order-bl">
+                            <div class="order-bl__name">Заказ:</div>
+                            <div class="order-bl__val">Накрутка живых подписчиков</div>
+                        </div>
+
+                        <div class="order-bl">
+                            <div class="order-bl__name">Итого:</div>
+                            <div class="order-bl__val">Спишется 1580.00 руб.</div>
+                        </div>
+                        <button type="button" class="create-order">Создать заказ</button>
+
+                        <div class="order-info">Созданное задание нельзя остановить или отменить,
+                            но вы можете обратиться в <a href="">службу поддержки</a> если
+                            у вас возникнут вопросы или пожелания.</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

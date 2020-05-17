@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SMM-Group</title>
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href='{% static "css/main.css" %}'>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href='{% static "favicon.ico" type="image/x-icon" %}'>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <a href="/" class="logo header-top__logo"><img src='{% static "img/logo.png" %}' alt=""></a>
+
+                <nav class="menu">
+                    <a href="/" class="menu__item">Главная </a>
+                    <a href="services.html" class="menu__item">Услуги и цены </a>
+                    <a href="news" class="menu__item">Новости</a>
+                    <a href="index.html#sect-faq" class="menu__item">FAQ </a>
+
+                    <a href="" class="accounts/login">Вход </a>
+                    <a href="accounts/login" class="menu__item menu__item_hidden">Регистрация </a>
+
+                    <button type="button" class="menu__close"><img src="img/close-btn.png" alt=""></button>
+                </nav>
+
+                <div class="header-top__account">
+                    <a href="" class="bnt1">
+                        <img src= '{% static "img/log.png" %}' alt="">
+                        <span>Вход</span>
+                    </a>
+                    <a href="registration.html" class="btn2">
+                        <img src='{% static "img/reg.png" %}' alt="">
+                        <span>Регистрация</span>
+                    </a>
+                </div>
+                <button type="button" class="mob-menu-btn"><img src='{% static "img/burger.png" %}' alt=""></button>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__copy">© 2019-2020 Все права защищены </p>
+
+                <div class="footer__logo"><img src='{% static "img/logo2.png" %}' alt=""></div>
+                <div class="footer__add">Bruce premium office БЦ г. Москва</div>
+            </div>
+        </footer>
+    </div>
+    <script src='{% static "js/jquery-3.4.1.min.js"></script>
+    <script src='{% static "js/main.js" %}' defer></script>
+    <script src='{% static "js/slick.min.js" %}'></script>
+    <script src='{% static "js/home.js" %}'></script>
+</body>
+
+</html>

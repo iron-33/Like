@@ -1,0 +1,1050 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+        <section class="services-sect">
+            <div class="container">
+                <h2 class="title2">Услуги и цены</h2>
+
+                <div class="services-items">
+                    <div class="services-items__img"><img src='{% static "img/spider4.jpg" %}' alt=""></div>
+                    <div class="service service-vk" data-targ="vk">
+                        <div class="service__name"><img src='{% static "img/vk.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>подписчики обычные</li>
+                            <li>подписчики живые</li>
+                            <li>лайки обычные</li>
+                            <li>лайки живые</li>
+                            <li>автолайки</li>
+                            <li>просмотры видео</li>
+                            <li>охват и показы публикации</li>
+                            <li>сохранение</li>
+                        </ul>
+                    </div>
+
+                    <div class="service service-instagram" data-targ="instagram">
+                        <div class="service__name"><img src='{% static "img/instagram.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>подписчики обычные</li>
+                            <li>подписчики живые</li>
+                            <li>лайки обычные</li>
+                            <li>лайки живые</li>
+                            <li>автолайки</li>
+                            <li>просмотры видео</li>
+                            <li>охват и показы публикации</li>
+                            <li>сохранение</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="service service-facebook" data-targ="fb">
+                        <div class="service__name"><img src='{% static "img/facebook.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>Подписчики живые</li>
+                            <li>Лайки живые</li>
+                            <li>Просмотры живые</li>
+                        </ul>
+                    </div>
+
+                    <div class="service service-telegram" data-targ="telegram">
+                        <div class="service__name"><img src='{% static "img/telegram.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>Подписчики на канал</li>
+                            <li>Подписчики в группы и чаты</li>
+                            <li>Просмотры</li>
+                        </ul>
+                    </div>
+
+                    <div class="service service-tiktok" data-targ="tiktok">
+                        <div class="service__name"><img src='{% static "img/tiktok.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>Подписчики живые</li>
+                            <li>Лайки живые</li>
+                            <li>Репосты</li>
+                            <li>Просмотры видео</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="service service-twitch" data-targ="twitch">
+                        <div class="service__name"><img src='{% static "img/twitch.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>Подписчики на канал</li>
+                            <li>просмотры на канал</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="service service-youtube" data-targ="youtube">
+                        <div class="service__name"><img src='{% static "img/youtube.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>Подписчики живые</li>
+                            <li>Лайки живые</li>
+                            <li>Просмотры живые</li>
+                            <li>Дизлайки</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="service service-ok" data-targ="ok">
+                        <div class="service__name"><img src='{% static "img/ok.png" %}' alt=""></div>
+                        <ul class="service__list">
+                            <li>Подписчики живые</li>
+                            <li>Лайки живые</li>
+                            <li>Репосты</li>
+                            <li>Опросы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+ <div class="wrap-modal wrap-modal-ask">
+        <div class="modal2">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+
+            <p class="modal2__title">
+                Задать вопрос
+            </p>
+            <div class="input-bl">
+                <p class="input-bl__title">UserName</p>
+                <div class="input-bl__field">
+                    <input type="text">
+                    <img src='{% static "img/user.png" %}' alt="">
+                </div>
+            </div>
+
+            <div class="input-bl">
+                <p class="input-bl__title">E mail</p>
+                <div class="input-bl__field">
+                    <input type="email">
+                    <img src='{% static "img/mail.png" %}' alt="">
+                </div>
+            </div>
+            <div class="input-bl">
+                <p class="input-bl__title">Ваш вопрос</p>
+                <div class="input-bl__field">
+                    <textarea></textarea>
+
+                </div>
+            </div>
+
+            <div class="forma__foot">
+                <button class="btn6 forma__btn">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-modal" data-name="fb">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Facebook</span>
+                <img src='{% static "img/fb2.png" %}' alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-facebook-1">
+                    <label for="input-serv-facebook-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-facebook-2">
+                    <label for="input-serv-facebook-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-facebook-3">
+                    <label for="input-serv-facebook-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-facebook-4">
+                    <label for="input-serv-facebook-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-facebook-5">
+                    <label for="input-serv-facebook-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-facebook-6">
+                    <label for="input-serv-facebook-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-facebook-7">
+                    <label for="input-serv-facebook-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-facebook-8">
+                    <label for="input-serv-facebook-8" class="serv">сохранение</label>
+                </div>
+
+
+                <div class="mess">
+                    <div class="mess__icon"><img src='{% static "img/icon.png" %}' alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrap-modal" data-name="youtube">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Youtube</span>
+                <img src='{% static "img/youtube2.png" %}' alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-youtube-1">
+                    <label for="input-serv-youtube-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-youtube-2">
+                    <label for="input-serv-youtube-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-youtube-3">
+                    <label for="input-serv-youtube-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-youtube-4">
+                    <label for="input-serv-youtube-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-youtube-5">
+                    <label for="input-serv-youtube-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-youtube-6">
+                    <label for="input-serv-youtube-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-youtube-7">
+                    <label for="input-serv-youtube-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-youtube-8">
+                    <label for="input-serv-youtube-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src='{% static "img/icon.png" %}' alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrap-modal" data-name="instagram">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Instagram</span>
+                <img src='{% static "img/instagram2.png" %}' alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-inst-1">
+                    <label for="input-serv-inst-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-inst-2">
+                    <label for="input-serv-inst-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-inst-3">
+                    <label for="input-serv-inst-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-inst-4">
+                    <label for="input-serv-inst-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-inst-5">
+                    <label for="input-serv-inst-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-inst-6">
+                    <label for="input-serv-inst-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-inst-7">
+                    <label for="input-serv-inst-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-inst-8">
+                    <label for="input-serv-inst-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src='{% static "img/icon.png" %}' alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrap-modal" data-name="telegram">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Telegram</span>
+                <img src='{% static "img/tg2.png" %}' alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-tg-1">
+                    <label for="input-serv-tg-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-tg-2">
+                    <label for="input-serv-tg-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-tg-3">
+                    <label for="input-serv-tg-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-tg-4">
+                    <label for="input-serv-tg-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-tg-5">
+                    <label for="input-serv-tg-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-tg-6">
+                    <label for="input-serv-tg-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-tg-7">
+                    <label for="input-serv-tg-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-tg-8">
+                    <label for="input-serv-tg-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src="img/icon.png" alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="wrap-modal" data-name="twitch">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Twitch</span>
+                <img src='{% static "img/twitch2.png" alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-twitch-1">
+                    <label for="input-serv-twitch-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-twitch-2">
+                    <label for="input-serv-twitch-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-twitch-3">
+                    <label for="input-serv-twitch-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-twitch-4">
+                    <label for="input-serv-twitch-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-twitch-5">
+                    <label for="input-serv-twitch-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-twitch-6">
+                    <label for="input-serv-twitch-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-twitch-7">
+                    <label for="input-serv-twitch-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-twitch-8">
+                    <label for="input-serv-twitch-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src='{% static "img/icon.png" %}' alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="wrap-modal" data-name="tiktok">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Tiktok</span>
+                <img src='{% static "img/tiktok2.png" alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-tiktok-1">
+                    <label for="input-serv-tiktok-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-2">
+                    <label for="input-serv-tiktok-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-3">
+                    <label for="input-serv-tiktok-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-4">
+                    <label for="input-serv-tiktok-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-5">
+                    <label for="input-serv-tiktok-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-6">
+                    <label for="input-serv-tiktok-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-7">
+                    <label for="input-serv-tiktok-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-tiktok-8">
+                    <label for="input-serv-tiktok-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src='{% static "img/icon.png" %}' alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="wrap-modal" data-name="vk">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Вконтакте</span>
+                <img src='{% static "img/vk2.png" alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-vk-1">
+                    <label for="input-serv-vk-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-vk-2">
+                    <label for="input-serv-vk-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-vk-3">
+                    <label for="input-serv-vk-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-vk-4">
+                    <label for="input-serv-vk-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-vk-5">
+                    <label for="input-serv-vk-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-vk-6">
+                    <label for="input-serv-vk-6" class="serv"> просмотvkео</label>
+                    <input type="radio" name="serv" id="input-serv-vk-7">
+                    <label for="input-serv-vk-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-vk-8">
+                    <label for="input-serv-vk-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src='{% static "img/icon.png" %}' alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrap-modal" data-name="ok">
+        <div class="modal">
+            <button class="modal__close">
+                <img src='{% static "img/close.png" %}' alt="">
+            </button>
+            <div class="modal__title">
+                <span> Раскрутка Одноклассники</span>
+                <img src='{% static "img/ok2.png" %}' alt="">
+            </div>
+            <div class="modal__pan1">
+                <span>Обязательное условие: ваша страница во время накрутки должна быть открыта</span>
+            </div>
+
+            <div class="modal__body">
+                <div class="serv-list">
+                    <input type="radio" name="serv" id="input-serv-ok-1">
+                    <label for="input-serv-ok-1" class="serv">подписчики обычные</label>
+                    <input type="radio" name="serv" id="input-serv-ok-2">
+                    <label for="input-serv-ok-2" class="serv">подписчики живые</label>
+                    <input type="radio" name="serv" id="input-serv-ok-3">
+                    <label for="input-serv-ok-3" class="serv">лайки обычные</label>
+                    <input type="radio" name="serv" id="input-serv-ok-4">
+                    <label for="input-serv-ok-4" class="serv">лайки живые </label>
+                    <input type="radio" name="serv" id="input-serv-ok-5">
+                    <label for="input-serv-ok-5" class="serv"> автолайки </label>
+                    <input type="radio" name="serv" id="input-serv-ok-6">
+                    <label for="input-serv-ok-6" class="serv"> просмотры видео</label>
+                    <input type="radio" name="serv" id="input-serv-ok-7">
+                    <label for="input-serv-ok-7" class="serv">
+                        охват и показы публикации </label>
+                    <input type="radio" name="serv" id="input-serv-ok-8">
+                    <label for="input-serv-ok-8" class="serv">сохранение</label>
+                </div>
+
+                <div class="mess">
+                    <div class="mess__icon"><img src="img/icon.png" alt="">
+
+                    </div>
+                    <div class="mess__txt">Чем больший объем, тем больше скидка. Покупай много и с выгодой. А купленный объем распределяй
+                        в личном кабинете на неограниченное количество заказов.</div>
+                </div>
+
+                <div class="serv-box-items">
+                    <div class="serv-box">
+                        <p class="serv-box__val">1000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 0%</p>
+                        <p class="serv-box__price">220 рублей за 1000</p>
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 220 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">2000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 5%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 418 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">5000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 10%</p>
+                        <p class="serv-box__price">209 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 990 РУБ</a>
+                    </div>
+
+                    <div class="serv-box">
+                        <p class="serv-box__val">10000</p>
+                        <p class="serv-box__name">подписчики обычные</p>
+                        <p class="serv-box__discount">скидка 15%</p>
+                        <p class="serv-box__price">187 рублей за 1000</p>
+
+                        <a href="" class="serv-box__buy">КУПИТЬ ЗА 1870 РУБ</a>
+                    </div>
+                </div>
+
+                <div class="advant-list">
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>Запуск в течении одного часа</span>
+                        </div>
+
+                        <div class="item-advant">
+                            <img src='{% static "img/smile.png" %}' alt="">
+                            <span>аккаунты среднего качества</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>гарантия результата</span>
+                        </div>
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>можно заказывать повторно</span>
+                        </div>
+                    </div>
+                    <div class="advant-list__col">
+                        <div class="item-advant">
+                            <img src='{% static "img/okey.png" %}' alt="">
+                            <span>без банов, без списаний</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+{% endblock %}
